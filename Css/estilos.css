@@ -1,0 +1,281 @@
+/* home */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.index {
+  background-image: url(https://www.xtrafondos.com/descargar.php?id=5578&resolucion=2560x1440);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.menu {
+  background-color: black;
+  padding: 25px;
+  font-style: normal;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: 'Wire One', sans-serif;
+}
+
+li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.piePagina {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: black;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Wire One', sans-serif;
+  padding: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .menu, .piePagina {
+    background-color: purple;
+  }
+}
+
+/******************index*****************/
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 3fr 3fr;
+      grid-template-columns: 3fr 3fr 3fr;
+  -ms-grid-rows: 200px 200px;
+      grid-template-rows: 200px 200px;
+      grid-template-areas: "homeDos homeDos homeDos"
+ "text text text";
+  padding: 174px 10px 174px 10px;
+}
+
+.homeDos {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: homeDos;
+  /*border: 2px solid white;*/
+  font-size: 60px;
+  color: wheat;
+  font-family: 'WindSong', cursive;
+  padding: 30px 100px 50px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: text;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*border: 2px solid white;*/
+  font-size: 55px;
+  color: violet;
+  font-family: 'Wire One', sans-serif;
+  padding: 45px 300px 45px 300px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .homeDos {
+    font-size: 30px;
+    color: wheat;
+    font-family: 'WindSong', cursive;
+    text-align: center;
+    padding: 45px 45px 45px 45px;
+  }
+  .text {
+    font-size: 40px;
+    color: violet;
+    font-family: 'Wire One', sans-serif;
+    padding: 45px 10px 45px 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .homeDos {
+    padding: 45px 45px 45px 45px;
+  }
+  .text {
+    padding: 45px 45px 45px 45px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .homeDos {
+    padding: 30px 100px 50px 100px;
+  }
+  .text {
+    padding: 45px 150px 45px 150px;
+  }
+}
+
+/******************* Acerca de...******************/
+/* @media screen and (max-width: 1024px) {
+
+    .menu{
+        display: grid;
+        background-color: red;
+        
+    }
+    li a {
+        color: lightgreen;
+        
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2 2fr);
+        grid-area: 
+                textDos
+                textThree
+                imagen        ;
+    }
+    .textDos{
+        display: grid;
+        font-size: 20px;
+        color: black;
+    }
+    .textThree {
+        font-size: 20px;
+        color: lightpink;
+    }
+    .imagen {
+        height: 100px;
+        width: 200px;
+    }
+
+
+}*/
+.acercaDe {
+  background-color: lightpink;
+  /*background-image: url("../Imagenes/abstract-art-colorful-background-b418.jpg");*/
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+      grid-template-areas: "textThree  imagen"
+ "textDos    imagen";
+}
+
+.textDos {
+  /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;*/
+  font-family: 'Wire One', sans-serif;
+  font-size: 90px;
+  color: whitesmoke;
+  padding: 10px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: textDos;
+}
+
+.textThree {
+  padding: 10px;
+  height: 632px;
+  width: 2fr;
+  font-size: 60px;
+  font-family: 'Wire One', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: lightseagreen;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: textThree;
+}
+
+.imagen {
+  display: inline-block;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  height: 750px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: imagen;
+}
+
+/* DEMOSTRACIONES */
+/* NIVELES */
+.cuerpo {
+  background-image: url(https://www.ibanez.com/eu/news/detail/news_file/file/fp_QX527PB.jpg);
+  background-repeat: no-repeat;
+  background-position: top-center;
+  background-size: 2050px;
+}
+
+.niveles {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.novato {
+  text-align: center;
+  padding: 10px;
+  border: lightcyan;
+  color: white;
+}
+
+.cajas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 57px;
+}
+
+.caja {
+  font-size: 30px;
+  border: 1px solid white;
+  padding: 50px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home1 {
+    background-color: red;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
