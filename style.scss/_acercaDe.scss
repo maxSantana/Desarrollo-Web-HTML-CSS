@@ -1,0 +1,84 @@
+
+/******************* Acerca de...******************/
+/* @media screen and (max-width: 1024px) {
+
+    .menu{
+        display: grid;
+        background-color: red;
+        
+    }
+    li a {
+        color: lightgreen;
+        
+    }
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2 2fr);
+        grid-area: 
+                textDos
+                textThree
+                imagen        ;
+    }
+    .textDos{
+        display: grid;
+        font-size: 20px;
+        color: black;
+    }
+    .textThree {
+        font-size: 20px;
+        color: lightpink;
+    }
+    .imagen {
+        height: 100px;
+        width: 200px;
+    }
+
+
+}*/
+    
+
+.acercaDe {
+    background-color: lightpink;
+    /*background-image: url("../Imagenes/abstract-art-colorful-background-b418.jpg");*/
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: 
+            "textThree  imagen"
+            "textDos    imagen";
+            
+}
+.textDos {
+    
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;*/
+    font-family: 'Wire One', sans-serif;
+    font-size: 50px;
+    color: whitesmoke;
+    padding: 10px;
+    grid-area: textDos;
+}
+.textThree{
+    padding: 10px;
+    height: 632px;
+    width: 2fr;
+    font-size: 60px;
+    font-family: 'Wire One', sans-serif;
+    display: flex;
+    align-items: center;
+    color: lightseagreen;
+    grid-area: textThree;
+}
+
+.imagen{
+  
+    display: inline-block;
+    flex-flow: wrap;
+    height: 750px;
+    grid-area: imagen;
+
+}

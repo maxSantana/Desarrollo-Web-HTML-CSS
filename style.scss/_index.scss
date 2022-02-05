@@ -1,0 +1,68 @@
+
+/******************index*****************/
+
+nav{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: 
+    "homeDos homeDos homeDos"
+    "text text text";   
+    padding: 174px 10px 174px 10px;    
+}
+
+.homeDos{
+    grid-area: homeDos;
+    /*border: 2px solid white;*/
+    font-size: 60px;
+    color: wheat;
+    font-family: 'WindSong', cursive;
+    padding: 30px 100px 50px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    grid-area: text;
+    display: flex;
+    /*border: 2px solid white;*/
+    font-size: 55px;
+    color: violet;
+    font-family: 'Wire One', sans-serif;
+    padding: 45px 300px 45px 300px;
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    
+    .homeDos{
+    font-size: 30px;
+    color: wheat;
+    font-family: 'WindSong', cursive;
+    text-align: center;
+    padding: 45px 45px 45px 45px;
+    }
+
+    .text{
+        font-size: 40px;
+        color: violet;
+        font-family: 'Wire One', sans-serif;
+        padding: 45px 10px 45px 10px;
+    }
+}
+@media screen and (min-width:768px) {
+    .homeDos{
+        padding: 45px 45px 45px 45px;
+    }
+    .text {
+        padding: 45px 45px 45px 45px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .homeDos{
+        padding: 30px 100px 50px 100px;
+    }
+    .text {
+        padding: 45px 150px 45px 150px;
+    }
+}

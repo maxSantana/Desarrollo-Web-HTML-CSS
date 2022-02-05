@@ -1,9 +1,6 @@
 /* home */
-* {
-  margin: 0;
-  padding: 0;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Wire+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
 .index {
   background-image: url(https://www.xtrafondos.com/descargar.php?id=5578&resolucion=2560x1440);
   background-repeat: no-repeat;
@@ -29,8 +26,11 @@
   font-family: 'Wire One', sans-serif;
 }
 
-li a {
+li {
   text-decoration: none;
+}
+
+li a {
   color: whitesmoke;
   font-size: 30px;
 }
@@ -67,8 +67,7 @@ nav {
       grid-template-columns: 3fr 3fr 3fr;
   -ms-grid-rows: 200px 200px;
       grid-template-rows: 200px 200px;
-      grid-template-areas: "homeDos homeDos homeDos"
- "text text text";
+      grid-template-areas: "homeDos homeDos homeDos" "text text text";
   padding: 174px 10px 174px 10px;
 }
 
@@ -186,8 +185,7 @@ nav {
   display: grid;
   -ms-grid-columns: 2fr 2fr;
       grid-template-columns: 2fr 2fr;
-      grid-template-areas: "textThree  imagen"
- "textDos    imagen";
+      grid-template-areas: "textThree  imagen" "textDos    imagen";
 }
 
 .textDos {
@@ -196,7 +194,7 @@ nav {
     justify-content: center;
     align-items: stretch;*/
   font-family: 'Wire One', sans-serif;
-  font-size: 90px;
+  font-size: 50px;
   color: whitesmoke;
   padding: 10px;
   -ms-grid-row: 2;
@@ -233,7 +231,6 @@ nav {
   grid-area: imagen;
 }
 
-/* DEMOSTRACIONES */
 /* NIVELES */
 .cuerpo {
   background-image: url(https://www.ibanez.com/eu/news/detail/news_file/file/fp_QX527PB.jpg);
@@ -277,5 +274,10 @@ nav {
   .home1 {
     background-color: red;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=estilos.css.map */

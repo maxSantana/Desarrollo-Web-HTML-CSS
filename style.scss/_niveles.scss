@@ -1,0 +1,38 @@
+/* NIVELES */
+
+.cuerpo{
+    background-image: url(https://www.ibanez.com/eu/news/detail/news_file/file/fp_QX527PB.jpg);
+    background-repeat: no-repeat;
+    background-position: top-center;
+    background-size: 2050px;
+}
+.niveles{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.novato{
+    text-align: center;
+    padding: 10px;
+    border:lightcyan;
+    color: white;
+}
+.cajas{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 57px;
+
+}
+.caja{  
+    font-size: 30px;
+    border: 1px solid white;
+    padding: 50px;
+    margin: 10px;
+        
+}
+
+@media only screen and (max-width: 1000px){
+    .home1{
+        background-color: red;
+    }
+}
