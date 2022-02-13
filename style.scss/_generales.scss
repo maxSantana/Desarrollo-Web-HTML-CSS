@@ -6,37 +6,46 @@
     background-position: center;
     background-size: cover;
 }
-
+$styleNavbar-footer: (
+    color1: black,
+    espacio: 35px,
+    propiedad: flex,
+    direccion: row,
+    espaciado: space-evenly,
+    fuenteLetra: 'Wire One', sans-serif
+    sinDeco: none,
+    sinStyle: none,
+    color2: whitesmoke,
+    tamano: 50px,
+);
 .menu {
-    background-color: black;
-    padding: 25px;
-    font-style: normal;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-family: 'Wire One', sans-serif;
-}
+    background-color: map-get($styleNavbar-footer, color1);
+    padding: map-get($styleNavbar-footer, espacio);
+    display: map-get($styleNavbar-footer, propiedad);
+    flex-direction: map-get($styleNavbar-footer, direccion);
+    justify-content: map-get($styleNavbar-footer, espaciado);
+    font-family: map-get($styleNavbar-footer, fuenteLetra);
+    
+    li {
 
-li {
-    text-decoration: none;
+        list-style: none;
+        font-size: map-get($styleNavbar-footer, tamano);
 
-    a {
-        color: whitesmoke;
-        font-size: 30px;
+        a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
     }
 }
 
-
 .piePagina {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: black;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Wire One', sans-serif;
-    padding: 25px;
+    @extend .menu; 
+    li a {
+        text-decoration: none;
+        list-style: none;
+        font-size: 70px;
+        color: purple;
+    }
 }
 
 @media screen and (max-width: 768px) {

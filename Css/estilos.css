@@ -8,11 +8,9 @@
   background-size: cover;
 }
 
-.menu {
+.menu, .piePagina {
   background-color: black;
-  padding: 25px;
-  font-style: normal;
-  list-style: none;
+  padding: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,38 +21,28 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-family: 'Wire One', sans-serif;
+  font-family: "Wire One";
 }
 
-li {
+.menu li, .piePagina li {
+  list-style: none;
+  font-size: 50px;
+}
+
+.menu li a, .piePagina li a {
   text-decoration: none;
-}
-
-li a {
   color: whitesmoke;
-  font-size: 30px;
 }
 
-.piePagina {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  background-color: black;
+.piePagina li a {
   text-decoration: none;
   list-style: none;
-  font-family: 'Wire One', sans-serif;
-  padding: 25px;
+  font-size: 70px;
+  color: purple;
 }
 
 @media screen and (max-width: 768px) {
-  .menu, .piePagina {
+  .menu, .piePagina, .piePagina {
     background-color: purple;
   }
 }
