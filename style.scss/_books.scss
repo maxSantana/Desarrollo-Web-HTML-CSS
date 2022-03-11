@@ -1,0 +1,32 @@
+#cuerpoBooks{
+    background-image: url(https://cutewallpaper.org/23/hd-wallpaper-guitar/2463024462.jpg);  
+}
+
+
+#guitarCarrusel{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+                "satch petru vai"
+                "satch petru vai";
+}
+
+#satch{
+    grid-area: "satch";
+}
+#petru {
+    grid-area: "petru";
+}
+#vai {
+    grid-area: "vai";
+}
+#titleBooks{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 50px;
+    p {
+        font-size: 20px;
+    }
+
+}

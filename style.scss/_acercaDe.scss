@@ -38,18 +38,14 @@
     
 
 .acercaDe {
-    background-color: lightpink;
-    /*background-image: url("../Imagenes/abstract-art-colorful-background-b418.jpg");*/
+    background-image: url("../Imagenes/abstract-art-colorful-background-b418.jpg");
 }
-
+/*
 .grid {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-template-areas: 
-            "textThree  imagen"
-            "textDos    imagen";
-            
-}
+    
+}*/
 .textDos {
     
     /*display: flex;
@@ -57,28 +53,28 @@
     justify-content: center;
     align-items: stretch;*/
     font-family: 'Wire One', sans-serif;
-    font-size: 50px;
+    font-size: 100px;
     color: whitesmoke;
     padding: 10px;
     grid-area: textDos;
 }
 .textThree{
     padding: 10px;
-    height: 632px;
     width: 2fr;
     font-size: 60px;
     font-family: 'Wire One', sans-serif;
     display: flex;
     align-items: center;
-    color: lightseagreen;
+    color: whitesmoke;
     grid-area: textThree;
 }
-
+#strato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .imagen{
-  
-    display: inline-block;
-    flex-flow: wrap;
-    height: 750px;
+    height: 70%;
+    border-radius: 10%;
     grid-area: imagen;
-
 }
